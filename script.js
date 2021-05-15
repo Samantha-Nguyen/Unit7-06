@@ -9,7 +9,7 @@ let guess = 0
 function play () {
   while (true) {
     guess = prompt('Guess my age!')
-    if (guess == age) {
+    if (guess === age) {
       alert('Congrats, you guessed correctly!')
       break
     } else if (guess < age) {
