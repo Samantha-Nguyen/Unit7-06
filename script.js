@@ -11,6 +11,7 @@ function play () {
     guess = prompt('Guess my age!')
     if (guess == age) {
       alert('Congrats, you guessed correctly!')
+      break
     } else if (guess < age) {
       alert('Try higher.')
     } else if (guess > age) {
