@@ -7,7 +7,7 @@ let guess = 0
 
 // This function sends alerts to the user and they must guess my age (16) correctly to break out of the loop
 function play () {
-  while (true) {
+  while (guess !== age) {
     guess = prompt('Guess my age!')
     if (guess === age) {
       alert('Congrats, you guessed correctly!')
