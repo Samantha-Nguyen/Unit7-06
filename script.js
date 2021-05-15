@@ -2,14 +2,14 @@
 document.getElementById('play').addEventListener('click', play)
 
 // Sets my age to 16, user guess to 0
-let age = 16
+const age = 16
 let guess = 0
 
 // This function sends alerts to the user and they must guess my age (16) correctly to break out of the loop
 function play () {
   while (guess !== age) {
     guess = prompt('Guess my age!')
-    if (guess == age) {
+    if (guess === age) {
       alert('Congrats, you guessed correctly!')
       break
     } else if (guess < age) {
